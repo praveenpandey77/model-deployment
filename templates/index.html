@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Email Spam Classifier</title>
+    <style>
+        body {
+            text-align: center;
+        }
+
+        button {
+            color: aliceblue;
+            background-color: blue;
+        }
+    </style>
+</head>
+        <body>
+            <h1>Email Spam Classifier</h1>
+      <div>
+          <form method="POST">
+              <textarea rows="12" cols="60" name="content" placeholder="Enter your email here"
+              value="{{ text }}">{{ text }}</textarea>
+              <div>
+                  <button type="submit">Submit</button>
+              </div>
+          </form>
+      </div>
+      <div>
+          <p id="display">{{text}}reset</p>
+      </div>
+        </body>
+</html>
