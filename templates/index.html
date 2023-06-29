@@ -16,17 +16,17 @@
         <body>
             <h1>Email Spam Classifier</h1>
       <div>
-          <form method="POST">
-              <textarea rows="12" cols="60" name="email-content" placeholder="Enter your email here"
-              value="{{ text }}">{{ text }}</textarea>
+          <form method="POST" actions="/predict">
+              <textarea rows="12" cols="60" name="email-content" placeholder="Enter your email here">
+              {{ email_text }}</textarea>
               <div>
-                  <button type="submit">Submit</button>
+                  <button>check spam</button>
                   <a href="/">reset</a>
               </div>
           </form>
       </div>
-      <div>
-          <p id="display">{{text}}</p>
-      </div>
+      
+          <h2>{{predictions}}</h2>
+      
         </body>
 </html>
